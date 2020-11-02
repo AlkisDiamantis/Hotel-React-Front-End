@@ -1,0 +1,403 @@
+ html body {  
+     height:100vh;
+     margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family:  'FontAwesome', 'Second Font name',Helvetica ;
+    border:none;
+    border-radius:4px;
+}
+
+h3{
+    font-weight: bolder;
+    opacity: 0.8;
+}
+
+.checked {
+    color: orange;
+  }
+
+p{
+    margin:2.5px;
+}
+
+.ratingbox{
+    background-color:rgb(30, 136, 16);
+    color:white;
+    padding:3px;
+}
+
+.Sale{
+    display: flex ;
+    background-color:white;
+    margin:10px;
+   height:250px;
+    box-shadow: -1px 1px 3px 3px rgba(0, 0, 0, 0.14);
+}
+
+img{
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    padding:1.5px
+}
+
+.Sale > .image{
+    flex:10;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background-color:rgb(70, 70, 70);
+    padding:2px;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color:rgb(70, 70, 70);
+    opacity: 0.7;
+    font-size:19px;
+  }
+
+.Sale > .firstDetails {
+    display: flex;
+    flex:15;
+    justify-content:center;
+    flex-direction: column;
+    padding:10px;
+    border-right: 1px solid rgb(218, 218, 218);
+    margin:10px 0px;
+}
+
+.Sale > .secondDetails {
+    padding:10px;
+    flex-direction: column; 
+    border-right: 1px solid rgb(218, 218, 218);
+    margin:10px 0px;
+    text-align: center;
+}
+
+.Sale > .secondDetails > p:hover {
+    background-color:rgb(227, 254, 255);
+    color:rgb(42, 133, 207);
+    cursor:pointer;
+}
+
+.Sale > .secondDetails> .moredetails{
+    border-top:1px solid rgb(218, 218, 218);
+}
+
+.Sale > .dealDetails {
+    flex:11 ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.Sale > .dealDetails > button {
+    color:white;
+    border:none;
+    border-radius: 3px;
+    font-size:21px;
+    background-color:rgb(83, 153, 50);
+    margin:10px;
+    height:50px;
+}
+.arrow{
+float: right;
+font-size: 22px;
+padding-right: 8px;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(46, 63, 63);
+}
+
+.searchBar{
+    display: flex;
+    flex:3;
+    height: 40px;
+    width: 100%;
+    margin:10px;
+}
+
+.searchicon{
+    font-family:Arial,FontAwesome;  
+    padding:0px 15px;
+}
+.searchBar > input {
+    border:none;
+    border-radius: 2px 0em 0em 2px;
+    width:82%
+}
+.searchBar > button {
+    width:16%;
+    border:none;
+    margin:0px 0px;
+    background-color:rgb(33, 131, 211);
+    color:white
+}
+
+.container1 > .check-in-out{
+    display: flex;
+    height: 48px;
+    margin-top:5px;
+    margin: 0 4px;
+}
+
+.container1 > .check-in-out > input{
+    flex:1;
+    margin:0 2px;
+}
+
+.container1 > .check-in-out > select{
+    flex:1;
+    margin:0 5px;
+    border:dotted 1px ;
+    padding:1px;
+    background-color:white;
+    color:black;
+    text-align-last:center;
+}
+
+.chooseMenu{
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 0.7;
+    height: 80px;
+    margin:0 5px;
+    margin-top:10px;
+    padding:4px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 8px;
+  border-radius: 5px;
+  background:  rgb(33, 131, 211);
+  outline: none;
+  opacity: 0.7;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.priceSlideBar{
+    display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     border-radius:0px;
+     border-right:1px solid white;
+     height: 70%;
+}
+
+.checkin{
+    display: flex;
+    flex-direction:row-reverse;
+    border-left:10px solid rgb(33, 131, 211);
+}
+
+.checkout{
+    flex-direction:row-reverse;
+    border-left:10px solid rgb(255, 145, 0);
+}
+
+.fa-info-circle{
+    opacity: 0.3;
+    font-size: 24px;  
+    padding-left:10px;
+}
+
+.maxPrice{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    font-weight: normal;
+    width: 90%;
+}
+
+.chooseMenu > div {
+    flex:1;
+    margin:0 2px;
+    color:white;
+}
+
+.typeRating{
+    display: flex;
+}
+
+.typeRating > div{
+    flex:1;
+    border-radius:0px;
+    border-right:1px solid white;
+    height: 70%;
+}
+
+.typeRating > .proptype{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.typeRating > .rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotelLocation{
+    display: flex;
+    color:white;
+}
+
+select{
+    background-color: rgb(46, 63, 63);
+    color:white;
+    width:90%;
+    border:none;
+}
+
+.hotelLocation > div{
+    flex:1;
+    padding:0 5px;
+    border-radius:0px;
+    border-right:1px solid white;
+    height: 70%;
+}
+
+.hotelLocation > .hoteldropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotelLocation > .morefilters{
+    display: flex;
+    flex-direction: column;
+    border:none;
+    justify-content: space-between;
+}
+
+.extrabar{
+    display: flex; 
+    padding-top:15px;
+    padding-right:20px;
+    height: 50px;
+    margin-left:7px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px
+}
+
+.extrabar > .sortby{
+    margin-left:auto;
+}
+
+.dealDetails > p {
+    height: 100px;
+}
+
+.extrabar > .sortby >select {
+    width:300px;
+    height: 100%;
+    background-color: white;
+    color:black;
+}
+
+.extrabar > .maplink{
+    width:200px;
+    
+}
+
+.backroundcolor{
+    background-color:rgb(224, 222, 222)
+}
+
+.green{
+    color:rgb(30, 136, 16)
+}
+
+strong{
+    padding:10px
+}
+
+.maplink{
+ padding-left: 5px;
+}
+
+.iframe{
+    width:100%;
+}
+.mapButton{
+    display: flex;
+    width: 220px;
+    background-image: url('./images/google_maps_hello_world.jpg');
+    border-radius: 0px;
+     border:1.5px solid white;
+     justify-content: center;
+}
+
+.inside {
+    padding:2px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+    width:60%;
+    border-radius:0px;
+    background-color:white;
+    color:black;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    opacity: 0
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png) center/80% no-repeat;
+    color: rgba(0, 0, 0, 0);
+    opacity: 1.5
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/calendar-16.png) center/80% no-repeat;
+    opacity: 0.8
+}
+
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
