@@ -8,15 +8,15 @@ Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
 The page will reload if you make edits.
-e.
+eg.
 
-* Filters
-This app is made to filtering data. All filters can work together.
+* Filters :
+This app is made to filtering data
 
-* Calendar
+* Calendar :
 The check in input show the current day. The check out inputs shows the day of the check in.
 
-* Stars
+* Stars : 
 There is an implementation for the hotel's stars.
 
 # That is How it Looks Like :
